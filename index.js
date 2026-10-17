@@ -27,7 +27,7 @@ async function searchMovies(movieName) {
 
     MovieHub.innerHTML = `<div class="loader"></div> `
 
-    let response = await fetch(`http://www.omdbapi.com/?apikey=32721737&s=${movieName}`);
+    let response = await fetch(`https://www.omdbapi.com/?apikey=32721737&s=${movieName}`);
     let data = await response.json()
     console.log(data);
 
