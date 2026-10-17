@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Details | MovieHub</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 text-white min-h-screen">
+
+
+    <header class="border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-5 py-5 flex justify-between items-center">
+
+            <a href="index.html" class="text-2xl md:text-3xl font-bold">
+                Movie<span class="text-red-500">Hub</span>.
+            </a>
+
+            <a href="index.html" class="text-sm text-zinc-400 hover:text-red-500 transition">
+                ← Back to Home
+            </a>
+
+        </div>
+    </header>
+
+
+    <main class="max-w-6xl mx-auto px-5 py-10">
+
+        <div class="mb-8">
+            <p class="text-red-500 text-xs font-semibold tracking-[3px] mb-3">
+                MOVIE INFORMATION
+            </p>
+
+            <h1 class="text-3xl md:text-4xl font-bold">
+                Movie <span class="text-red-500">Details</span>
+            </h1>
+
+            <p class="text-zinc-400 mt-3">
+                Explore the story and information about your favorite movie.
+            </p>
+        </div>
+
+     
+        <div id="movie-deails" class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 md:p-8 min-h-64">
+
+            <p class="text-zinc-400 text-center py-16">
+                Loading movie details...
+            </p>
+
+        </div>
+
+   
+        <div class="mt-8">
+            <a href="index.html"
+                class="inline-block bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg font-semibold transition">
+                ← Back to Movies
+            </a>
+        </div>
+
+    </main>
+
+
+
+
+   
+    <footer class="border-t border-zinc-800 mt-12">
+        <div class="max-w-6xl mx-auto px-5 py-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+
+            <p class="font-bold text-lg">
+                Movie<span class="text-red-500">Hub</span>.
+            </p>
+
+            <p class="text-sm text-zinc-500">
+                Made for movie lovers. © 2026 MovieHub
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+    <script src="movie-deails.js"></script>
+
+</body>
+
+</html>
