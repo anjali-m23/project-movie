@@ -10,17 +10,17 @@ movieForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     let query = movieInput.value.trim()
-    // value lene ke  liye console me
+    
 
 
 
     if (!query) {
         return
     }
-    // faltu ki api request nhi jayegi agar if condtion lgya to
+    
     console.log(query);
     searchMovies(query)
-}) // conditin agar kuch na ho to searcgh button na chali
+}) 
 
 
 async function searchMovies(movieName) {
@@ -36,14 +36,14 @@ async function searchMovies(movieName) {
     if (data.Response === "True") {
 
 
-        displayMovies(data.Search); // movie ko disply krn, derch dt ko serch krne ke liye
+        displayMovies(data.Search);
     } else {
 
 console.log(data.Error);
         MovieHub.innerHTML = `<p>${data.Error}</p> `
     }
 
-} //s parameter ko multiple value ke liye lgte hai
+} 
 
 
 
@@ -84,11 +84,11 @@ function displayMovies(movies) {
 }
 
 MovieHub.addEventListener("click", (e) => {
-    e.stopPropagation(); //koi event riger na ho
+    e.stopPropagation(); 
     const movieCard = e.target.closest(".movie-Card")
 
     let imdbID = movieCard.dataset.imdbID
-    location.href = `movie-deatail.html?id=${imdbID}` // url ko change krta hai dusre page peleke jta hai
+    location.href = `movie-deatail.html?id=${imdbID}` 
 })
 
 
